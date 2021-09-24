@@ -1,0 +1,31 @@
+.body {
+  width: 100%;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input,
+.joinBtn {
+  width: 365px;
+  height: 42px;
+  margin-top: 12px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.joinBtn {
+  background-color: #8e6cf4;
+  width: 369px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.alert {
+  padding-top: 15px;
+  font-size: 18px;
+}
+.SignIn {
+  color: #8e6cf4;
+}
