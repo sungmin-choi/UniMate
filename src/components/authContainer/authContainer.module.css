@@ -1,0 +1,43 @@
+.userIcon {
+  color: aliceblue;
+  margin-left: 25px;
+  margin-right: 10px;
+  font-size: 38px;
+  cursor: pointer;
+}
+.icon {
+  color: aliceblue;
+  font-size: 28px;
+  margin-left: 18px;
+}
+.iconBox {
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.mark {
+  width: 100%;
+  text-align: center;
+  display: none;
+  color: white;
+  font-weight: 500;
+}
+.iconBox:hover > .mark {
+  display: block;
+}
+.authContainer {
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+.userBox {
+  position: relative;
+}
+.userInfoList {
+  position: absolute;
+  top: 30px;
+}

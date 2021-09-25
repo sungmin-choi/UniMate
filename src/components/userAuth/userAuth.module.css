@@ -30,3 +30,9 @@
 .main {
   padding: 40px;
 }
+.white {
+  background-color: white;
+}
+.grey {
+  background-color: #f2f5f7;
+}

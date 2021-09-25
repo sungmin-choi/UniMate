@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../header/header';
-const Index = (props) =>{
+const Index = () =>{
+
     return(
-        <Header/>
+        <h1>Home</h1>
     );
 }
 

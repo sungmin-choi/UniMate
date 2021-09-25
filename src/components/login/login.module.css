@@ -1,0 +1,44 @@
+.body {
+  width: 100%;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input,
+.loginBtn {
+  width: 365px;
+  height: 42px;
+  margin-top: 12px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.loginBtn {
+  background-color: #8e6cf4;
+  width: 369px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.alert {
+  padding-top: 15px;
+  font-size: 18px;
+}
+.SignUp {
+  color: #8e6cf4;
+  cursor: pointer;
+}
+.findId {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.fid,
+.fpw {
+  cursor: pointer;
+  display: block;
+}
