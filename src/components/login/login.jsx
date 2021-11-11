@@ -1,13 +1,29 @@
 import React from 'react';
 import styles from './login.module.css';
-
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { loginUser } from '../../_actions/userAction';
+import { useHistory } from 'react-router';
 const Login = (props) => {
+    const [userId,setUserId]=useState("");
+    const [password,setPassword]=useState("");
+    const dispatch = useDispatch();
+    const history = useHistory();
+    const onSubmitHandler = (e)=>{
+        e.preventDefault();
+        let body = {
+            user_id:userId,
+            user_pwd:password,
+          };
+          dispatch(loginUser(body));
+          history.push("/");
+    };
     return(
         <section className={styles.body}>
-        <form className={styles.container}>
-            <input className={styles.input} type="text" placeholder="UserName or Email" />
-            <input className={styles.input} type="password" placeholder="Password" />
-            <button className={styles.loginBtn}>Login</button>
+        <form onSubmit={onSubmitHandler} className={styles.container}>
+            <input className={styles.input} value={userId} onChange={(e)=>setUserId(e.target.value)} type="text" placeholder="userId" />
+            <input className={styles.input} value={password} onChange={(e)=>setPassword(e.target.value)} type="password" placeholder="Password" />
+            <button type="submit" className={styles.loginBtn}>Login</button>
             <div className={styles.findId}>
                 <span className={styles.fid} >Forget your ID?</span>
                 <span className={styles.fpw} >Forget your password?</span>

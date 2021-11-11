@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  padding-top: 8px;
+}
+.submitBtn {
+  background-color: #8e6cf4;
+  width: 369px;
+  color: aliceblue;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.selectTitle {
+  font-size: 30px;
+  font-weight: 600;
+}
+.inputBirth {
+  width: 352px;
+  height: 38px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.countryOption {
+  width: 352px;
+  height: 38px;
+}
+.genderBox {
+  display: flex;
+}
+.selectGender {
+  width: 80px;
+  height: 27px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+input[name="gender"] {
+  position: absolute;
+  visibility: hidden;
+}
+input[id="female"]:checked ~ .selectGender[id="femaleBtn"] {
+  background-color: #8e6cf4;
+  color: white;
+  border: 1px solid #8e6cf4;
+}
+input[id="male"]:checked ~ .selectGender[id="maleBtn"] {
+  background-color: #8e6cf4;
+  color: white;
+  border: 1px solid #8e6cf4;
+}
+.arrowIcon {
+  position: absolute;
+  left: 10px;
+  font-size: 24px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.arrowIcon:hover {
+  font-size: 30px;
+}

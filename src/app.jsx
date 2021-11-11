@@ -7,9 +7,14 @@ import UserDetail from './components/userDetail/userDetail';
 import Header from './components/header/header';
 import { useState } from 'react';
 function App() {
+
   const [authKinds,setAuthKinds] = useState("login");
   const [authen,setAuthen] = useState({
-      
+    firstName:"sungmin",
+    lastName:"choi",
+    mail:"namja306@naver.com",
+    id:"namja306",
+    userDetail:null,
   });
   return (
     <Router>
@@ -23,7 +28,8 @@ function App() {
         </Route>
         <Route exact path="/userDetail">
         <Header onAuth={authen} onAuthkinds={(data)=>setAuthKinds(data)}/>
-          <UserDetail/>
+          <UserDetail userData={authen} onHandleUpload={(data)=>{setAuthen(data);
+          console.log(data);}}/>
         </Route>
     </Switch>
     </Router>

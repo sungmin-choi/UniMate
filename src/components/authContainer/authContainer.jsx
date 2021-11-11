@@ -1,5 +1,5 @@
 import styles from './authContainer.module.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle,faHeart,faCommentDots,faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router';

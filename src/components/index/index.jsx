@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 const Index = () =>{
-
     return(
         <h1>Home</h1>
     );
